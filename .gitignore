@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+
+# ML artifacts
+backend/models/*.joblib
+backend/models/*.json
+!backend/models/.gitkeep
+
+# Data policy: keep raw/processed out of Git, keep samples
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
